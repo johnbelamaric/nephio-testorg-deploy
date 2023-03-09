@@ -3,6 +3,9 @@ kind: Repository
 metadata:
   labels:
     kpt.dev/deployment-environment: production
+    nephio.org/region: us-central2
+    nephio.org/site-type: regional
+    nephio.org/site: us-central2-regional
   name: us-central2-regional
   namespace: default
 spec:

@@ -3,16 +3,19 @@ kind: Repository
 metadata:
   labels:
     kpt.dev/deployment-environment: production
-  name: us-east1-regional
+    nephio.org/region: us-east1
+    nephio.org/site-type: regional
+    nephio.org/site: us-east1-regional-02
+  name: us-east1-regional-02
   namespace: default
 spec:
   content: Package
   deployment: true
-  description: US East 1 Regional Cluster Workloads
+  description: US East 1 Regional 02 Cluster Workloads
   git:
     branch: main
     createBranch: true
-    directory: /us-east1-regional
+    directory: /us-east1-regional-02
     repo: https://github.com/johnbelamaric/nephio-testorg-deploy.git
     secretRef:
       name: nephio-testorg-packages-auth
