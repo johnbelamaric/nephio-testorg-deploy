@@ -1,0 +1,19 @@
+apiVersion: config.porch.kpt.dev/v1alpha1
+kind: Repository
+metadata:
+  labels:
+    kpt.dev/deployment-environment: production
+  name: us-central1-edge-01
+  namespace: default
+spec:
+  content: Package
+  deployment: true
+  description: US Central 1 Edge Site 01 Cluster Workloads
+  git:
+    branch: main
+    createBranch: true
+    directory: /us-central1-edge-01
+    repo: https://github.com/johnbelamaric/nephio-testorg-deploy.git
+    secretRef:
+      name: nephio-testorg-packages-auth
+  type: git

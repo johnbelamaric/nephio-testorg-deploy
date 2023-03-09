@@ -1,0 +1,19 @@
+apiVersion: config.porch.kpt.dev/v1alpha1
+kind: Repository
+metadata:
+  labels:
+    kpt.dev/deployment-environment: production
+  name: us-east1-regional
+  namespace: default
+spec:
+  content: Package
+  deployment: true
+  description: US East 1 Regional Cluster Workloads
+  git:
+    branch: main
+    createBranch: true
+    directory: /us-east1-regional
+    repo: https://github.com/johnbelamaric/nephio-testorg-deploy.git
+    secretRef:
+      name: nephio-testorg-packages-auth
+  type: git
