@@ -15,8 +15,8 @@ spec:
   git:
     branch: main
     createBranch: true
-    directory: /us-east2-regional
-    repo: https://github.com/johnbelamaric/nephio-testorg-deploy.git
+    directory: /
+    repo: https://github.com/nephio-test/jbelamaric-us-east2-regional.git
     secretRef:
-      name: nephio-testorg-packages-auth
+      name: nephio-test-auth
   type: git
