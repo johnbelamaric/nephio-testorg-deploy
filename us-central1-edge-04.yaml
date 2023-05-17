@@ -16,7 +16,7 @@ spec:
     branch: main
     createBranch: true
     directory: /
-    repo: https://github.com/nephio-test/jbelamaric-us-central1-edge-04.git
+    repo: https://github.com/nephio-test/jbelamaric-demo-us-central1-edge-04.git
     secretRef:
       name: nephio-test-auth
   type: git
